@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EliminarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pastilla" />
+
+        <EditText
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/nombre"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre del medicamento"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/cedula"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Matricula del medicamento"
+            android:inputType="number" />
+
+        <EditText
+            android:hint="precio"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/costo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/update"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:text="Actualizar" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/deleteR"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ED0C0C"
+            android:text="Eliminar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
